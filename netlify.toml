@@ -1,0 +1,12 @@
+[build]
+  command = "yarn build"
+  publish = "build"
+
+[context.production.environment]
+  REACT_APP_NAME = "REACTJS FROM 0 TO HERO(PRODUCTION)"
+  REACT_APP_BASENAME = "/"
+  REACT_APP_API_ENDPOINT = "https://"
+  REACT_APP_BUILD_VERSION = "$BUILD_ID"
+  REACT_APP_URL = "$URL"
+  REACT_APP_COMMIT_REF = "$COMMIT_REF"
+  REACT_APP_BRANCH = "$BRANCH"
